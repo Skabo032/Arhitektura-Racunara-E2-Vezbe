@@ -1,0 +1,8 @@
+-U funkciji/potprogramu, samo eax, ecx i edx ne moramo da restauiramo na steku.
+Mozemo slobodno da ih koristimo. Takodje return upisuje rezultat u %eax, ili edx:eax.
+-CDECL konvencija
+-%ebp nam je referentna tacka u stek frejmu. -4(%ebp) prva lokalna promenljiva
+	4(%ebp) povratna adresa, 8(%ebp) prvi argument funkcije
+-KAKO KOMPAJLIRATI IZ VISE FAJLOVA I KAKO MESATI C I ASEMBLER U ISTOM PROGRAMU?
+	Objasnjeno na videu Vezbe5!
+
